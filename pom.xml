@@ -41,6 +41,12 @@
                     <target>11</target>
                 </configuration>
             </plugin>
+            <!-- Plugin war -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version> <!-- hoặc 3.4.0 mới nhất -->
+            </plugin>
         </plugins>
     </build>
 </project>

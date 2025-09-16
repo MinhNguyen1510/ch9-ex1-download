@@ -144,6 +144,8 @@ public class DownloadServlet extends HttpServlet {
             cookie.setPath("/"); //allow the download application to access it
             response.addCookie(cookie);
         }
+        HttpSession session = request.getSession();
+        session.removeAttribute("user");
         String url = "/delete_cookies.jsp";
         return url;
     }
